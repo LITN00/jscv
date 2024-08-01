@@ -6,7 +6,7 @@ const ExampleHead = styled.div``;
 const App = () => {
   return (
     <ExampleHead>
-      react page test
+      gh-page test
     </ExampleHead>
   );
 }
