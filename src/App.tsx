@@ -8,25 +8,32 @@ const Page = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
 `;
 
 const Central = styled.div`
-  width: 80%;
   display: flex;
   flex-direction: column;
   position: relative;
+
+  
 `;
 
 const Box1 = styled.div`
-  width: 80%;
+  
   display: flex;
   flex-direction: row;
   align-items: center;
+  @media screen and (max-width: 944px) {
+    flex-direction: column;
+  }
 `;
+
+
 const ProfileBox = styled.div`
-  width: 600px;
   padding-left: 44px;
   flex-shrink: 0;
+  margin-top: 44px;
 `;
 
 const Name = styled.h2`
@@ -49,12 +56,14 @@ const Box2 = styled.div`
   margin-top: 44px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 `;
 
 const Left = styled.div`
   font-size: 20px;
 `;
 const Right = styled.div`
+  width: 80%;
   margin-left: 36px;
 `;
 
@@ -66,6 +75,11 @@ const DurationHead = styled.p`
 `;
 const DurationBody = styled.p`
   margin-left: 20px;
+`;
+
+const Tail = styled.div`
+  width: 100%;
+  height: 80px;
 `;
 
 
@@ -87,17 +101,14 @@ const App = () => {
               Jinseop Im
             </Name>
             <Description>
-              M.S. student
-              <a href="https://sites.google.com/view/kaist-via" target="_blank">
+              M.S. student  <a href="https://sites.google.com/view/kaist-via" target="_blank">
                 @Vertically Integrated Architecture Research Group
               </a>
+             
             </Description>
-            <PlainText>
-              Email: jinseop.im@kaist.ac.kr
-            </PlainText>
-            <PlainText>
-              Office: N1 818 @ KAIST
-            </PlainText>
+            <Description>Graduate School of AI Semiconductor</Description>
+            <PlainText>Email: jinseop.im@kaist.ac.kr</PlainText>
+            <PlainText>Office: N1 818 @ KAIST</PlainText>
           </ProfileBox>
         </Box1>
         <Border />
@@ -110,12 +121,12 @@ const App = () => {
             <DurationBody>
 
             </DurationBody> */}
-            <DurationBody>
+            <DurationBox>
               <DurationHead>{"B.S. in School of Electrical Engineering, KAIST"}</DurationHead>
               <DurationBody>{"2018.03 - 2023.08"}</DurationBody>
               <DurationBody>{"Minor in School of Computing"}</DurationBody>
               {/* <DurationBody style={{fontStyle: "italic"}}>{"Magna Cum Laude"}</DurationBody> */}
-            </DurationBody>
+            </DurationBox>
           </Right>
         </Box2>
         <Border />
@@ -143,6 +154,7 @@ const App = () => {
           </Right>
         </Box2>
       </Central>
+      <Tail />
     </Page>
   );
 }
