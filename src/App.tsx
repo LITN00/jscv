@@ -60,6 +60,9 @@ const Box2 = styled.div`
 `;
 
 const Left = styled.div`
+  width: 15%;
+  justify-content: flex-start;
+  align-items: flex-start;
   font-size: 20px;
 `;
 const Right = styled.div`
@@ -106,7 +109,7 @@ const App = () => {
               </a>
              
             </Description>
-            <Description>Graduate School of AI Semiconductor</Description>
+            <Description>Graduate School of AI Semiconductor, KAIST</Description>
             <PlainText>Email: jinseop.im@kaist.ac.kr</PlainText>
             <PlainText>Office: N1 818 @ KAIST</PlainText>
           </ProfileBox>
@@ -117,39 +120,59 @@ const App = () => {
             {"Education"}
           </Left>
           <Right>
-            {/* <DurationHead>{"September 2024 - Present"}</DurationHead>
-            <DurationBody>
+            <DurationBox>
+              <DurationHead>{"M.S. in Graduate School of AI Semiconductor, KAIST"}</DurationHead>
+              <DurationBody>{"March 2025 - Present"}</DurationBody>
+              <DurationBody style={{fontStyle: "italic"}}>{"Advisor: Prof. Minsoo Rhu"}</DurationBody>
+            </DurationBox>
 
-            </DurationBody> */}
             <DurationBox>
               <DurationHead>{"B.S. in School of Electrical Engineering, KAIST"}</DurationHead>
-              <DurationBody>{"2018.03 - 2023.08"}</DurationBody>
+              <DurationBody>{"March 2018 - August 2024"}</DurationBody>
               <DurationBody>{"Minor in School of Computing"}</DurationBody>
-              {/* <DurationBody style={{fontStyle: "italic"}}>{"Magna Cum Laude"}</DurationBody> */}
+              <DurationBody style={{fontStyle: "italic"}}>{"Magna Cum Laude"}</DurationBody>
             </DurationBox>
           </Right>
         </Box2>
         <Border />
         <Box2>
           <Left>
-            {"Experience"}
+            {"Work Experience"}
           </Left>
           <Right>
             <DurationBox>
+              <DurationHead>Research Intern at <a href="https://sites.google.com/view/kaist-via" target="_blank">Vertically Integrated Architecture Research Group</a>, KAIST</DurationHead>
+              <DurationBody>{"September 2024 - February 2025"}</DurationBody>
+            </DurationBox>
+
+            <DurationBox>
               <DurationHead>Undergraduate Research Intern at <a href="https://sites.google.com/view/kaist-via" target="_blank">Vertically Integrated Architecture Research Group</a>, KAIST</DurationHead>
-              <DurationBody>{"2023.12 - 2024.08"}</DurationBody>
+              <DurationBody>{"December 2023 - August 2024"}</DurationBody>
             </DurationBox>
             
             <DurationBox>
               <DurationHead>Undergraduate Research Intern at <a href="https://ssl.kaist.ac.kr/" target="_blank">Semiconductor System Lab</a>, KAIST</DurationHead>
-              <DurationBody>{"2023.06 - 2023.08"}</DurationBody>
+              <DurationBody>{"June 2023 - August 2023"}</DurationBody>
             </DurationBox>
 
             <DurationBox>
               <DurationHead>Frontend Developer at <a href="https://selectstar.ai/" target="_blank">SelectStar</a>, Seoul</DurationHead>
-              <DurationBody>{"2020.12 - 2023.02"}</DurationBody>
+              <DurationBody>{"December 2020 - February 2023"}</DurationBody>
             </DurationBox>
             
+            
+          </Right>
+        </Box2>
+        <Border />
+        <Box2>
+          <Left>
+            {"Teaching Experience"}
+          </Left>
+          <Right>
+            <DurationBox>
+              <DurationHead>Teaching Assistant for CS101: Introduction to Programming, KAIST</DurationHead>
+              <DurationBody>{"March 2020 - December 2020"}</DurationBody>
+            </DurationBox>
             
           </Right>
         </Box2>
